@@ -15,6 +15,10 @@ public class Tamgiac {
         this.c = c;
     }
 
+    //String name;
+    //protected String name;
+    public String name;
+
     public Integer chuVi() {
         return a + b + c;
     }
