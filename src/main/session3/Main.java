@@ -25,8 +25,8 @@ public class Main {
         System.out.println("Điểm TB: " + hs.diemTB());
         System.out.println("Xếp loại: " + hs.xepLoai());
 
-        hs.setDiemToan(11.0); // ❌ báo lỗi
-        hs.setDiemVan(-2.0);  // ❌ báo lỗi
+        hs.setDiemToan(11.0); 
+        hs.setDiemVan(-2.0); 
     }
 
 }
