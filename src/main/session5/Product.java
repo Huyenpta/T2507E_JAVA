@@ -28,7 +28,7 @@ public class Product {
     }
 
     public Double getPrice() {
-        return price * 0.95;
+        return price;
     }
 
     public void setPrice(Double price) {
