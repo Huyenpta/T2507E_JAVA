@@ -1,9 +1,9 @@
-package main.session5;
+package main.asm3;
 
 public class Product {
     private String productId;
     private String name;
-    private Double price;
+    private  Double price;
 
     public Product(String productId, String name, Double price) {
         this.productId = productId;
@@ -35,13 +35,11 @@ public class Product {
         this.price = price;
     }
 
-    public String getInfo() {
-        return null;
+    public String getinfo(){
+        return "Mã sản phẩm: " + getProductId() + "Tên: " + getName() + "Giá: " + calculateDiscountedPrice();
     }
 
     public Double calculateDiscountedPrice(){
-        return null;
-    };
-
-
+        return getPrice() * 90/100;
+    }
 }
