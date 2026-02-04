@@ -58,7 +58,6 @@ public class PhoneBook extends Phone{
     public void updatePhone(String name, String newphone) {
         for (PhoneNumber p: PhoneList) {
             if (p.getName().equalsIgnoreCase(name)){
-                p.getPhone().clear();
                 p.getPhone().add(newphone);
                 System.out.println("Tên: " +p.getName());
                 System.out.println("Số điện thoại: " +p.getPhone());
