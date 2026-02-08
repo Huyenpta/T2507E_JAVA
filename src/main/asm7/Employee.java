@@ -40,11 +40,7 @@ public abstract class Employee {
     public abstract String getPosition();
 
     public void showInfo(){
-        System.out.println("Id: " +getId());
-        System.out.println("Name: " +getName());
-        System.out.println("Position: " +getPosition());
-        System.out.println("Salary: " +calculateSalary());
-
+        System.out.println("Id: " +getId() + ", Name: " +getName() + ", Position: " +getPosition() + ", Salary: " +calculateSalary());
     }
 
 
