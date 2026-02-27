@@ -12,5 +12,6 @@ public class Main {
         for (Employee e: em ){
             e.showInfo();
         }
+        System.out.println("Happy New Year!");
     }
 }
