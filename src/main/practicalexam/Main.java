@@ -7,30 +7,30 @@ public class Main {
         Scanner sp = new Scanner(System.in);
         Product p = new Product();
 
-        System.out.println("ID:");
+        System.out.println("Mã sản phẩm:");
         p.setId(sp.nextInt());
         sp.nextLine();
 
-        System.out.println("Name:");
+        System.out.println("Tên sản phẩm:");
         p.setName(sp.nextLine());
 
         System.out.println("Thumbnail:");
         p.setThumbnail(sp.nextLine());
 
-        System.out.println("Price:");
+        System.out.println("Giá:");
         p.setPrice(sp.nextDouble());
 
-        System.out.println("Quantity:");
+        System.out.println("Số lượng:");
         p.setQty(sp.nextInt());
         sp.nextLine();
 
-        System.out.println("Description:");
+        System.out.println("Mô tả:");
         p.setDescription(sp.nextLine());
 
-        System.out.println("Product information:");
+        System.out.println("Hiển thị thông tin sản phẩm:");
         p.displayInfo();
 
-        System.out.println("Order quantity:");
+        System.out.println("Số lượng đặt hàng:");
         int orderQty = sp.nextInt();
 
         if(p.checkAvailability(orderQty)){

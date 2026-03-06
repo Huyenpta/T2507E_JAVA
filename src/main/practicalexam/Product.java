@@ -22,7 +22,9 @@ public class Product {
     }
 
     public void setId(Integer id) {
-        this.id = id;
+        if (id > 0) {
+            this.id = id;
+        }
     }
 
     public String getName() {
@@ -30,7 +32,9 @@ public class Product {
     }
 
     public void setName(String name) {
-        this.name = name;
+        if(name != null && !name.isEmpty()){
+            this.name = name;
+        }
     }
 
     public String getThumbnail() {
@@ -46,7 +50,9 @@ public class Product {
     }
 
     public void setPrice(Double price) {
-        this.price = price;
+        if (price >=0) {
+            this.price = price;
+        }
     }
 
     public Integer getQty() {
@@ -54,7 +60,9 @@ public class Product {
     }
 
     public void setQty(Integer qty) {
-        this.qty = qty;
+        if (qty >=0) {
+            this.qty = qty;
+        }
     }
 
     public String getDescription() {
