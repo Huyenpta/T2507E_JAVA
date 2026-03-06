@@ -46,7 +46,6 @@ public class Main {
             System.out.println("Hàng trong kho không đủ");
 
         }
-        sp.close();
 
     }
 }
