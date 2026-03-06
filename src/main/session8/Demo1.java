@@ -9,7 +9,7 @@ public class Demo1 {
     public static void main(String[] args){
 
         try {
-            Database db = new Database();
+            Database db = Database.getInstance();
             //lấy thông tin sinh viên
             String sql = "select * from students";
             Statement stt = db.getStatement();//Sửa dữ liệu lấy db vào chỗ này

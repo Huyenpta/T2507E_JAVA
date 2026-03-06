@@ -11,7 +11,10 @@ public class Database {
     private static final String password = "";
     private static final String driver = "com.mysql.cj.jdbc.Driver";
     private Connection conn;
-    public Database(){
+
+    //Singleton pattern
+    private static Database _instance;
+    private Database(){
         try {
             Class.forName(driver);
             this.conn = DriverManager.getConnection(connectionString,user,password);
@@ -19,6 +22,15 @@ public class Database {
             System.out.println(e.getMessage());
         }
     }
+
+    //singleton pattern
+    public static Database getInstance(){
+        if (_instance == null){
+            _instance = new Database();
+        }
+        return _instance;
+    }
+
     public Statement getStatement() throws Exception{
         return conn.createStatement();
     }
